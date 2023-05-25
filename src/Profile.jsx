@@ -1,6 +1,8 @@
+import dog from "./assets/booboo.jpg"
+
 const Profile = () => {
   return (
-    <img src="./week1-homework/src/assets/images/booboo.jpg" alt="booboo" />
+    <img src={dog} alt="booboo" />
   );
 };
 

@@ -5,12 +5,17 @@
 // Pass a prop into the component at #2
 // Add some state to the App component
 // Optional, update the state created at #5
-import "./assets/images/booboo.jpg"
+import React, { Component } from 'react';
+
 import "./App.css"
 import Gallery from "./Gallery.jsx"
 
-export default function App() {
-  return (
-    <Gallery />
-  );
+
+class App extends Component {
+  state = {  } 
+  render() { 
+    return (<Gallery/>);
+  }
 }
+ 
+export default App;
