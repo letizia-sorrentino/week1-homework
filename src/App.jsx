@@ -1,4 +1,5 @@
 // Homework week 1 - task 1
+
 // Create a new react app
 // Create a component
 // Include that component in App.jsx
@@ -10,8 +11,16 @@ import React, { Component } from "react";
 import "./App.css";
 import Profile from "./components/Profile";
 
+
 class App extends Component {
-  state = {};
+  state = {count: 0};
+
+onClick = () => {
+  console.log('click');
+  this.setState({count: this.state.count + 1 });
+  console.log(this.state.count);
+}
+
   render() {
     return (
       <div>
@@ -24,6 +33,7 @@ class App extends Component {
           phone={"555-555-555"}
           email={"fido@dog.com"}
         />
+
         <Profile
           firstName={"Max"}
           img={
@@ -40,6 +50,8 @@ class App extends Component {
           phone={"777-777-777"}
           email={"paco@dog.com"}
         />
+        <button className="like-button" onClick={this.onClick}>Like: {this.state.count} </button>
+
       </div>
     );
   }
