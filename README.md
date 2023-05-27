@@ -1,1 +1,1 @@
-# week1-homework
+# react-mini-project
